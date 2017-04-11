@@ -15,14 +15,15 @@ int calue(int n){
 }
 
 int main(){
-	int a, b, max;
+	int a, b;
 
 	while(cin >> a >> b){
 		cout << a << " " << b << " ";
+		int max = 0;
 		for (int i = a ; i <= b ; i++){
-			int length = calue(i);
-			if (max < length)
-				max = length;
+			int count = calue(i);
+			if (max < count)
+				max = count;
 		}
 		cout << max << endl;
 	}
