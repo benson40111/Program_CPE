@@ -6,10 +6,14 @@ using namespace std;
 void check11(char input[]){
 	int sum = 0, odd = 0, even = 0, i = 0;
 	while(input[i]){
-		if (i % 2)
+		if (i % 2) {
 			odd += input[i] - '0';
-		else
+			cout << odd << endl;
+		}
+		else{
 			even += input[i] - '0';
+			cout << even << endl;
+		}
 		i++;
 	}
 	sum = abs(odd - even);

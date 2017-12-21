@@ -12,7 +12,7 @@ int f(int input){
 			input /= 10;
 		}
 		input = temp;
-		return f(input);
+		return f(temp);
 	}
 }
 
